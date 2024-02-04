@@ -1,0 +1,195 @@
+@font-face {
+    font-family: poppins-bold;
+    src: url('../font/POPPINS-BOLD_0.TTF');
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url('../font/POPPINS-LIGHT_0.TTF');
+}
+
+@font-face {
+    font-family: qatar;
+    src: url('../font/QATAR2022ARABIC-HEAVY.TTF');
+}
+
+:root {
+    --main-color: #ff0000;
+    --bg-color: #e6e6e6;
+    --second-bg-color: #242424;
+
+    --big-font: 7rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+
+    --transition: all .50s ease;
+
+    --border: 1px solid transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--second-bg-color);
+    border-bottom: 1px solid transparent;
+    padding: 22px 5%;
+    transition: all .45s ease;
+}
+
+header.sticky {
+    padding: 8px 5%;
+    background: transparent;
+    backdrop-filter: blur(35px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.logo a {
+    font-size: var(--p-font);
+    color: var(--bg-color);
+    font-family: qatar, sans-serif;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.logo span {
+    font-family: qatar, sans-serif;
+}
+
+.navlist {
+    display: inline-flex;
+}
+
+.navlist li {
+    padding: 0 15px;
+}
+
+.navlist li a {
+    color: var(--bg-color);
+    font-family: poppins-bold, sans-serif;
+    transition: var(--transition);
+}
+
+.navlist li a:hover {
+    color: var(--main-color);
+    transition: var(--transition);
+}
+
+.btn {
+    padding: 10px 30px;
+    background: var(--main-color);
+    font-family: poppins-light, sans-serif;
+    color: var(--bg-color);
+    font-weight: 600;
+    border: var(--border);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    background: none;
+    transition: var(--transition);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+section {
+    padding: 160px 5% 120px;
+}
+
+.home {
+    background-image: url('../img/fundo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home h3 {
+    font-family: poppins-light, sans-serif;
+    font-family: 600;
+    color: var(--bg-color);
+    margin-bottom: -5px;
+}
+
+.home h1 {
+    font-family: qatar, sans-serif;
+    font-size: var(--big-font);
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.home h2 {
+    font-family: poppins-bold, sans-serif;
+    color: var(--bg-color);
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img {
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+    font-family: qatar, sans-serif;
+}
+
+.about-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+}
