@@ -38,21 +38,3 @@ const header = document.querySelector(".navbar")
             document.querySelector('.navlist').classList.remove('show');
             document.querySelector('.navbar').classList.remove('show');
         });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var video = document.getElementById('spaceVideo');
-
-            var observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        video.play();
-                    } else {
-                        video.pause();
-                    }
-                });
-            }, {
-                threshold: 0.5
-            });
-
-            observer.observe(document.getElementById('space'));
-        });
