@@ -1,0 +1,96 @@
+/* 4k responsive */
+@media (max-width:2560px){
+    :root {
+        --main-color: #ff0000;
+        --bg-color: #ffffff;
+        --second-bg-color: #242424;
+        --big-font: 10rem;
+        --h1-font: 7rem;
+        --h2-font: 3rem;
+        --p-font: 1.5rem;
+        --transition: all .50s ease;
+        --border: 1px solid transparent;
+    }
+    .logo a {
+        font-size: 2rem;
+    }
+    .navlist li a {
+        font-size: var(--p-font);
+    }
+    .btn {
+        width: 150px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: var(--main-color);
+        font-family: poppins-light, sans-serif;
+        font-size: 1.2rem;
+        color: var(--bg-color);
+        font-weight: 600;
+        border: var(--border);
+        transition: var(--transition);
+    }
+    .home h3 {
+        font-size: 2rem;
+    }
+    .home h2{
+        font-size: 2rem;
+    }
+    .about .content {
+        gap: 60px; /* Mantém o espaçamento entre os itens */
+    }
+    .about-img img{
+        width: 1200px;
+    }
+    .about-text p{
+        width: 90%;
+    }
+    .class{
+        height: 100vh;
+    }
+    .class-box{
+        width: 450px;
+    }
+    .class-box .class-btn {
+        width: 150px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: var(--main-color);
+        font-family: poppins-light, sans-serif;
+        color: var(--bg-color);
+        font-weight: 600;
+        border: var(--border);
+        transition: var(--transition);
+    }
+    .teacher-box {
+        width: 500px;
+        height: 600px;
+    }
+
+    .teacher-box h3{
+        font-size: 2rem;
+    }
+}
+
+/* Laptop */
+@media (max-width:1440px){
+    :root {
+        --main-color: #ff0000;
+        --bg-color: #ffffff;
+        --second-bg-color: #242424;
+        --big-font: 5rem;
+        --h1-font: 2rem;
+        --h2-font: 2rem;
+        --p-font: 1rem;
+        --transition: all .50s ease;
+        --border: 1px solid transparent;
+    }
+    .logo a {
+        font-size: 1rem;
+    }
+}
