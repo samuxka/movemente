@@ -38,6 +38,7 @@
 body {
     width: 100%;
     height: 100vh;
+    color: var(--second-bg-color);
 }
 
 header {
@@ -59,6 +60,10 @@ header.sticky {
     padding: 8px 5%;
     background: #2424246e;
     backdrop-filter: blur(35px);
+}
+
+header.sticky #menu-icon{
+    color: var(--bg-color);
 }
 
 header.sticky .logo a {
@@ -101,6 +106,7 @@ span {
 
 .navlist {
     display: inline-flex;
+    align-items: center;
 }
 
 .navlist li {
@@ -118,7 +124,7 @@ span {
     transition: var(--transition);
 }
 
-.btn {
+.navlist .btn {
     padding: 10px 30px;
     background: var(--main-color);
     font-family: poppins-light, sans-serif;
@@ -126,6 +132,10 @@ span {
     font-weight: 600;
     border: var(--border);
     transition: var(--transition);
+}
+
+.navlist .btn a{
+    font-weight: 900;
 }
 
 .btn:hover {
@@ -136,9 +146,15 @@ span {
 }
 
 #menu-icon {
-    font-size: 35px;
     color: var(--text-color);
     z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+#close-menu {
+    color: var(--text-color);
+    z-index: 10002;
     cursor: pointer;
     margin-left: 25px;
     display: none;
@@ -238,6 +254,7 @@ section {
 }
 
 .class {
+    width: 100%;
     height: 80vh;
 }
 
@@ -325,7 +342,6 @@ section {
     font-size: var(--h1-font);
     color: var(--second-bg-color);
     font-family: qatar;
-    font-weight: 800;
     margin-bottom: -15px;
 }
 
@@ -356,7 +372,6 @@ section {
 }
 
 .teacher-box img {
-    max-width: 500px;
     width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -377,7 +392,7 @@ section {
 .teacher-box .social{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -398,66 +413,31 @@ section {
     color: var(--main-color);
 }
 
-.planos {
+.space {
+    height: auto;
+    text-align: center;
     padding: 5%;
-    text-align: center;
-    background-color: #f4f4f4;
-    height: 70vh;
+    background-color: var(--bg-color);
 }
 
-.planos h2 {
-    font-size: var(--h1-font);
-    color: var(--second-bg-color);
-    font-family: qatar;
-    margin-bottom: -20px;
+.space h2 {
+    font-size: 4rem;
+    font-family: qatar, sans-serif;
 }
 
-.planos p {
-    font-size: 1rem;
-    color: var(--second-bg-color);
-    font-family: poppins-light, sans-serif;
-    margin-bottom: 1.5rem;
+.space p {
+    font-size: 1.2em;
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+.space video {
+    width: 80%;
+    height: auto;
+    border: none;
 }
-
-thead th {
-    border-bottom: 2px solid var(--second-bg-color);
-    font-family: poppins-bold, sans-serif;
-    color: var(--second-bg-color);
-    padding: 0.5rem;
-}
-
-tbody td {
-    border-bottom: 1px solid var(--second-bg-color);
-    padding: 0.5rem;
-    text-align: center;
-    font-family: poppins-light, sans-serif;
-    color: var(--second-bg-color);
-}
-
-tbody td.price {
-    font-size: 1.5rem;
-    font-family: poppins-bold, sans-serif;
-}
-
-.check {
-    color: green;
-}
-
-.cross {
-    color: red;
-}
-
-tbody td:first-child {
-    text-align: left;
-}
-
 .contato {
-    height: 80vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
     padding: 5%;
