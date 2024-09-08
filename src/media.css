@@ -1,0 +1,13 @@
+/* smartphones (pequenos) */
+
+/* Tablets (médio)*/
+
+/* Laptops (Grandes) */
+
+/* Desktop (extra grandes) */
+
+@media (max-width:900px){
+    #menu-icon{
+        display: block;
+    }
+}

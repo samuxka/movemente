@@ -1,0 +1,517 @@
+@font-face {
+  font-family: paris;
+  src: url('assets/fonts/PARIS2024-VARIABLE.TTF');
+}
+
+:root{
+  /* color area */
+  --main-color:#FF2930;
+  --black:#242424;
+  --white:#ffffff;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+  padding: 0 3%;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--black);
+  padding: 25px 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+header.sticky{
+  padding: 10px 2%;
+  background: var(--black);
+  backdrop-filter: blur(35px);
+}
+
+header .navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .navbar .logo img{
+  width: 15rem;
+}
+
+header .navbar nav .navlist{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+header .navbar nav .navlist li a{
+  color: var(--white);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: .3s linear;
+  position: relative;
+}
+
+header .navbar nav .navlist li a:hover{
+  color: var(--main-color);
+}
+
+#menu-icon{
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.home{
+  background-image: url('assets/imgs/home.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.home .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home .content h1{
+  color: var(--white);
+  font-size: 4rem;
+  width: 65%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.home i{
+  color: var(--white);
+  font-size: 50px;
+  transform: translateX(0px);
+  animation: upDown 1s infinite ease-in-out;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+}
+
+.about .top{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.top h1{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.about .bottom{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .bottom .content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about .bottom .content .img,
+.about .bottom .content .text{
+  width: 50%;
+  height: 100%;
+}
+
+.about .bottom .content .img img{
+  width: 100%;
+}
+
+.about .bottom .content .text{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about .bottom .content .text .title h1{
+  font-size: 3.5rem;
+}
+
+.about .bottom .content .text .about_text p{
+  font-size: 1.5rem;
+}
+
+.about .bottom .content .text .button a{
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: .3s;
+  color: var(--white);
+}
+
+.about .bottom .content .text .button a:hover{
+  background: none;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+
+.class{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: var(--black);
+}
+
+.class .top{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.class .top h1{
+  color: var(--white);
+}
+
+.class .bottom{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+.class .bottom .card{
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--white);
+  box-shadow: 0px 10px 10px var(--black);
+}
+
+.class .bottom .card .image img{
+  width: 100%;
+}
+
+.class .bottom .card .info{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 0 3%;
+}
+
+.class .bottom .card .info h2{
+  font-size: 2.5rem;
+}
+
+.class .bottom .card .info h3{
+  margin-bottom: -20px;
+}
+
+.class .bottom .card .info p{
+  font-size: 1.5rem;
+}
+
+.class .bottom .card .info .turma{
+  margin-bottom: -20px;
+}
+
+.swiper-pagination-bullet{
+  width: 0.5rem !important;
+  height: 0.375rem !important;
+  background-color: var(--white) !important;
+  opacity: 1 !important;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet{
+  width: 0.5rem !important;
+  height: 0.375rem !important;
+  background-color: var(--main-color) !important;
+  opacity: 1 !important;
+  transition: 0.3s;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 0.2rem !important;
+}
+
+.swiper-pagination-bullet-active{
+  width: 1.2rem !important;
+  height: 0.375rem !important;
+  border-radius: 0.5rem !important;
+}
+
+.call{
+  background-image: url('./assets/imgs/call.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.call .text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  color: var(--white);
+}
+
+.call .text p{
+  font-size: 2rem;
+}
+
+.call .text a{
+  width: 200px;
+  height: 50px;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--white);
+  border: 1px solid transparent;
+  transform: scale(1);
+  animation: call 2s infinite ease;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.call .text a:hover{
+  background: transparent;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.contact .top{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.contact .bottom{
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .bottom .infos_academy{
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
+}
+
+.contact .bottom .infos_academy .info{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact .bottom .infos_academy .info h1{
+  font-size: 5rem;
+  color: var(--black);
+}
+
+.contact .bottom .infos_academy .info nav ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 10px;
+}
+
+.contact .bottom .infos_academy .info nav ul li a{
+  margin-left: 50px;
+  color: var(--black);
+  font-size: 1.2rem;
+  transition: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  vertical-align: middle;
+}
+
+.contact .bottom .infos_academy .info nav ul li a:hover{
+  color: var(--main-color);
+}
+
+.contact .bottom .infos_academy .mapa{
+  width: 100%;
+  height: auto;
+}
+
+iframe{
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+.contact .bottom .message_academy{
+  width: 47.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .bottom .message_academy form{
+  z-index: 1001;
+  width: 100%;
+  background: #fff;
+  margin: 25px;
+  transition: .3s;
+}
+
+.contact .bottom .message_academy form h2{
+  font-family: var(--ultrabold-font);
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+}
+
+.contact .bottom .message_academy form .input-box{
+  margin-top: 20px;
+  width: 100%;
+  font-family: var(--second-regular-font);
+  color: #333;
+}
+
+.contact .bottom .message_academy form .input-box .field{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #ddd;
+  outline: none;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 8px;
+  font-family: var(--second-regular-font);
+}
+
+.contact .bottom .message_academy form .input-box .field.mess{
+  width: 100%;
+  height: 200px;
+  resize: none;
+  font-family: var(--second-regular-font);
+}
+
+.contact .bottom .message_academy form button{
+  margin-top: 25px;
+  width: 100%;
+  height: 55px;
+  background: var(--main-color);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.contact .bottom .message_academy form button:hover{
+  background: none;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+}
+
+footer{
+  width: 100%;
+  height: 70px;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p{
+  color: var(--white);
+}
+
+footer a{
+  color: var(--white);
+  transition: .3s;
+}
+
+footer a:hover{
+  color: var(--main-color);
+}
+
+@keyframes upDown{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes call {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

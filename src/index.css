@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: paris;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--black);        /* color of the tracking area */
+}
+ 
+body::-webkit-scrollbar-thumb {
+    background-color: var(--white);    /* color of the scroll thumb */
+    width: 10px;
+    border: none;       /* roundness of the scroll thumb */
+}
