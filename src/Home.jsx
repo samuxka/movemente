@@ -1,7 +1,7 @@
 import About from "./About"
 import Call from "./Call"
 import Class from "./Class"
-import Navbar from "./navbar"
+import Navbar from "./Navbar"
 import Contato from "./Contato"
 import Footer from "./Footer"
 
