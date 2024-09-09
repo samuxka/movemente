@@ -1,0 +1,112 @@
+.grade{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.grade .thumb{
+    background-image: url('../../assets/imgs/home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
+    padding: 1.5%;
+}
+
+.grade .thumb .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.grade .thumb .content p,
+.grade .thumb .content h1{
+    color: var(--white);
+    transition: .3s;
+}
+
+.grade .thumb .content p:hover{
+    color: var(--main-color);
+}
+
+.grade .thumb .content h1{
+    font-size: 7rem;
+}
+.grade .text-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    background: transparent;
+    overflow: hidden;
+}
+
+.grade .text-wrapper h1{
+    font-weight: 900;
+    font-size: 10rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 1rem;
+    letter-spacing: 1px;
+    animation: move-rtl 10s linear infinite;
+    color: var(--black);
+}
+
+.grade .aulas{
+    width: 100%;
+    height: auto;
+    padding: 1.5%;
+}
+
+.grade .aulas .day{
+    margin: 20px 0;
+}
+.grade .aulas .day h1{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.grade .aulas .day p{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--black);
+}
+
+.grade .aulas .day p span{
+    font-weight: 500;
+}
+
+.grade .aulas .day i{
+    font-size: 10px;
+    margin: 0 5px 0 30px;
+    color: var(--black);
+}
+
+@keyframes move-rtl {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width:320px) {
+    .grade .thumb .content h1{
+        font-size: 5rem;
+    }
+    .grade .text-wrapper h1{
+        font-weight: 900;
+        font-size: 7rem;
+    }
+    .grade .aulas .day h1{
+        font-size: 2rem;
+    }
+    .grade .aulas .day p{
+        font-size: 1.2rem;
+    }
+}

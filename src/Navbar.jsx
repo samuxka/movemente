@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import Logo from './assets/imgs/logo.png'
 import React,{ useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   useEffect(() => {
@@ -53,7 +54,7 @@ function Navbar() {
               <li><a href="#">Inicio</a></li>
               <li><a href='#about'>Sobre</a></li>
               <li><a href="#class">Turmas</a></li>
-              <li><a href="#">Grade</a></li>
+              <li><Link to='/grade'>Grade</Link></li>
               <li><a href="#">Faixas Pretas</a></li>
               <li><a href="#contact">Contato</a></li>
             </ul>
