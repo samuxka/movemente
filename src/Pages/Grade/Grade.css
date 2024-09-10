@@ -122,3 +122,14 @@
         font-size: 7px;
     }
 }
+@media (max-width:250px) {
+    .grade .aulas .day h1{
+        font-size: 1.5rem;
+    }
+    .grade .aulas .day p{
+        font-size: 0.9rem;
+    }
+    .grade .aulas .day i{
+        font-size: 5px;
+    }
+}
