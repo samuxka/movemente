@@ -111,12 +111,12 @@
     }
 }
 
-@media (max-width:260px) {
+@media (max-width:300px) {
     .grade .aulas .day h1{
         font-size: 1.5rem;
     }
     .grade .aulas .day p{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .grade .aulas .day i{
         font-size: 7px;
