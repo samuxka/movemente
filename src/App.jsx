@@ -1,5 +1,4 @@
 import './App.css'
-import './MediaQueries.css'
 
 import Home from './Home'
 import Grade from './Pages/Grade/Grade'
