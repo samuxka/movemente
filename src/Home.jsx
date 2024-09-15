@@ -5,6 +5,8 @@ import Navbar from "./Navbar"
 import Contato from "./Contato"
 import Footer from "./Footer"
 
+import './App.css'
+
 function Home(){
   return (
     <>
