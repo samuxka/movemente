@@ -131,13 +131,19 @@
     }
 }
 @media (max-width:235px) {
+    .grade .aulas .day{
+        margin: 10px 0;
+    }
     .grade .aulas .day h1{
+        text-align: center;
         font-size: 1.5rem;
     }
     .grade .aulas .day p{
+        text-align: center;
         font-size: 0.7rem;
     }
     .grade .aulas .day i{
         font-size: 5px;
+        margin: 0 5px;
     }
 }
