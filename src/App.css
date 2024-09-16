@@ -530,6 +530,9 @@ footer a:hover{
 }
 
 @media (max-width:1920px) {
+  .call .text h1{
+    font-size: 3rem;
+  }
   .class .bottom .card{
       width: 500px;
       height: 700px;
@@ -629,6 +632,10 @@ footer a:hover{
   .contact .bottom .message_academy{
       width: 100%;
   }
+}
+
+@media (max-width:720px) {
+  
 }
 
 @media (max-width:425px) {
