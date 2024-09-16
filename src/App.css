@@ -634,10 +634,6 @@ footer a:hover{
   }
 }
 
-@media (max-width:720px) {
-  
-}
-
 @media (max-width:425px) {
   .home .content h1{
       width: 100%;
