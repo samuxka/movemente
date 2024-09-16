@@ -58,7 +58,7 @@ function Contato(){
                                 <li><a href="#"><i className="uil uil-envelope-alt"></i> movementejiujitsu@gmail.com</a></li>
                                 <li><a href="https://www.instagram.com/academiamovemente/"><i className="uil uil-instagram"></i> academiamovemente</a></li>
                                 {/* <li><a href="#"><i className="uil uil-youtube"></i> canal da academia</a></li> */}
-                                <li><a href="https://api.whatsapp.com/send/?phone=5575999236060&text=Olá%2C+vim+pelo+Instagram+e+gostaria+de+saber+mais+sobre+a+Adriano+Pereira+Team.&type=phone_number&app_absent=0" target="_blank"><i className="uil uil-phone"></i> +55 75999236060</a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=5575999236060&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20jiu-jitsu" target="_blank"><i className="uil uil-phone"></i> +55 75999236060</a></li>
                                 <li><a href="https://www.google.com/maps/place/Av.+Juracy+Magalhães,+Santo+Antônio+de+Jesus+-+BA,+44444-088/@-12.969413,-39.2478964,123m/data=!3m1!1e3!4m6!3m5!1s0x73e2a3c0a23d573:0xee82816128ce3940!8m2!3d-12.9691122!4d-39.2524235!16s%2Fg%2F1ymts97y0?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"><i className="uil uil-map-marker-alt"></i> Av. Juracy Magalhaes - Santo Antônio de Jesus, BA</a></li>
                             </ul>
                         </nav>
