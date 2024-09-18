@@ -2,6 +2,7 @@ import './App.css'
 
 import Home from './Home'
 import Grade from './Pages/Grade/Grade'
+import Professores from './Pages/Professores/Professores'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/grade' element={<Grade />}></Route>
+          <Route path='/professores' element={<Professores />}></Route>
         </Routes>
       </div>
     </Router>

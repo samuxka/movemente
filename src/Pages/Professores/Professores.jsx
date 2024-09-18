@@ -1,0 +1,67 @@
+import './Professores.css'
+import { Link } from 'react-router-dom'
+import samuka from '../../assets/imgs/samuka.jpg'
+import Footer from '../../Footer'
+
+function FaixasPretas() {
+  return (
+    <>
+      <section className="section_professores">
+        <div className="thumb">
+          <div className="content">
+            <Link to='/'><p><i className="uil uil-angle-left"></i> Voltar a página principal</p></Link>
+            <h1>Professores</h1>
+          </div>
+        </div>
+        <div className="text-wrapper">
+                    <h1>MOVE-MENTE JIU-JITSU!</h1>
+                    <h1>MOVE-MENTE JIU-JITSU!</h1>
+                    <h1>MOVE-MENTE JIU-JITSU!</h1>
+                    <h1>MOVE-MENTE JIU-JITSU!</h1>
+                    <h1>MOVE-MENTE JIU-JITSU!</h1>
+        </div>
+        <div className="professores">
+          <div className="professor">
+            <div className="img">
+              <img src={samuka} />
+            </div>
+            <div className="content">
+              <h1>Samuel Oliveira</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.</p>
+              <div className="social">
+                <i className="uil uil-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <div className="professor">
+            <div className="img">
+              <img src={samuka} />
+            </div>
+            <div className="content">
+              <h1>Samuel Oliveira</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.</p>
+              <div className="social">
+                <i className="uil uil-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <div className="professor">
+            <div className="img">
+              <img src={samuka} />
+            </div>
+            <div className="content">
+              <h1>Samuel Oliveira</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.</p>
+              <div className="social">
+                <i className="uil uil-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </>
+  )
+}
+
+export default FaixasPretas

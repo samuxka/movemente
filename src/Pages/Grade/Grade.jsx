@@ -8,7 +8,7 @@ function Grade() {
             <section className="grade" id="grade">
                 <div className="thumb">
                     <div className="content">
-                        <Link to='/'><p><i className="uil uil-angle-left"></i>Voltar a página principal</p></Link>
+                        <Link to='/'><p><i className="uil uil-angle-left"></i> Voltar a página principal</p></Link>
                         <h1>Grade de aulas</h1>
                     </div>
                 </div>

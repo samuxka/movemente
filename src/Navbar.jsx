@@ -55,7 +55,7 @@ function Navbar() {
               <li><a href='#about'>Sobre</a></li>
               <li><a href="#class">Turmas</a></li>
               <li><Link to='/grade'>Grade</Link></li>
-              <li><a href="#">Faixas Pretas</a></li>
+              <li><Link to='/professores'>Professores</Link></li>
               <li><a href="#contact">Contato</a></li>
             </ul>
           </nav>
