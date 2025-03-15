@@ -148,6 +148,25 @@
     }
 }
 
+@media (max-width:500px){
+    .section_professores .thumb .content h1{
+        font-size: 4rem;
+    }
+    .section_professores .professores{
+        flex-direction: column;
+    }
+    .section_professores .professores .professor{
+        width: 470px;
+        display: flex;
+    }
+    .section_professores .professores .professor .content h1{
+        font-size: 2rem;
+    }
+    .section_professores .professores .professor .content p{
+        font-size: .7rem;
+    }
+}
+
 @media (max-width:425px){
     .section_professores .thumb .content h1{
         font-size: 4rem;
