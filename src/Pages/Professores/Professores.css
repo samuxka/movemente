@@ -156,7 +156,7 @@
         flex-direction: column;
     }
     .section_professores .professores .professor{
-        width: 470px;
+        width: 420px;
         display: flex;
     }
     .section_professores .professores .professor .content h1{
