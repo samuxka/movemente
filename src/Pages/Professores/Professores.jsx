@@ -29,7 +29,7 @@ function FaixasPretas() {
             </div>
             <div className="content">
               <h1>Adriano Pereira</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.</p>
+              {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.</p> */}
               <a href="https://www.instagram.com/adrianopereirateam">
                 <div className="social">
                   <i className="uil uil-instagram"></i>
@@ -43,7 +43,7 @@ function FaixasPretas() {
             </div>
             <div className="content">
               <h1>Valmir Silva</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.</p>
+              {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.</p> */}
               <a href="https://www.instagram.com/valmir_saj">
                 <div className="social">
                   <i className="uil uil-instagram"></i>
@@ -57,7 +57,7 @@ function FaixasPretas() {
             </div>
             <div className="content">
               <h1>Ildelandio Oliveira</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.</p>
+              {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla et illum praesentium dolorem odio sapiente id in? Maiores cum quod, esse natus facilis qui nihil neque vitae earum, iusto excepturi.</p> */}
               <a href="https://www.instagram.com/projetogeracaogadita/">
                 <div className="social">
                   <i className="uil uil-instagram"></i>

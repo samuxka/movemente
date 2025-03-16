@@ -139,6 +139,7 @@
     .section_professores .professores .professor{
         width: 700px;
         display: flex;
+        flex-direction: column;
     }
     .section_professores .professores .professor .content h1{
         font-size: 2rem;
@@ -196,6 +197,7 @@
     .section_professores .professores .professor{
         width: 350px;
         display: flex;
+        flex-direction: column;
     }
     .section_professores .professores .professor .content h1{
         font-size: 2rem;
